@@ -145,6 +145,8 @@ ul {
   .aboutme {
     width: 100%;
     text-align: center;
+    padding: unset;
+    margin-inline: auto;
   }
 }
 
