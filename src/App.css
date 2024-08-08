@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+a:hover {
+  color: #1f706d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  position: relative;
+  overflow: visible;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  background: #0f172a;
+  font-family: "Roboto Mono", monospace;
+  color: #e2e8f0;
+  a {
+    color: #e2e8f0;
+    text-decoration: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrapper {
+  width: 40%;
+  position: fixed;
+  top: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
+.lead {
+  font-size: 40px;
+  margin-bottom: 20px;
+  /* margin-top: -30px; */
+}
+
+.description {
+  font-size: 20px;
+  margin-bottom: 40px;
+  /* width: 100%; */
+}
+
+ul {
+  list-style: none;
+  li {
+    margin-top: 20px;
+    margin-block-start: 20px;
+  }
+}
+
+.btn-download {
+  background-color: #ffffff;
+  color: #0f172a;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.btn-download:hover {
+  background-color: #1f706d;
+  color: #faffff;
+}
+
+.main {
+  width: 100%;
+  margin-left: 40%;
+  padding: 20px;
+}
+
+.languages {
+  width: 60%;
+}
+
+.progress-bar {
+  background-color: #1f706d;
+  color: #ffffff;
+  animation: fillBar 2s forwards;
+}
+
+@keyframes fillBar {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: var(--fill-level);
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background: linear-gradient(to bottom, #031144, #02321d); */
+  background: #1f706d;
+  border-radius: 10px;
+  height: 50px;
+}
+
+/* .aboutme {
+  margin-top: 20px;
+  margin-bottom: 20px;
+} */
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .aboutme {
+    font-size: 18px;
+  }
+
+  .languages h5,
+  .technologies h5 {
+    font-size: 22px;
+  }
+
+  .tech-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .wrapper {
+    width: 100%;
+    position: static;
+    font-size: 30%;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main {
+    width: 100%;
+    margin: auto;
+  }
+  .technologies {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.out-of-bounds-image {
+  position: fixed;
+  top: 0;
+  left: -5%; /* Sposta l'immagine oltre il bordo sinistro dello schermo */
+  z-index: 0;
+  width: 20%; /* Puoi regolare la larghezza */
+  height: 1000px;
+  transform: rotate(-20deg); /* Ruota l'immagine di -20 gradi */
+  object-fit: fill;
 }
