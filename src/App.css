@@ -140,7 +140,11 @@ ul {
   .technologies {
     width: 100%;
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
+  }
+  .aboutme {
+    width: 100%;
+    text-align: center;
   }
 }
 
