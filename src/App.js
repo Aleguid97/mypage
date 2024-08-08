@@ -19,7 +19,7 @@ function App() {
         <div className="buttons-container">
           <button className="btn-download rounded-pill btn">About Me</button>
           <button className="btn-download rounded-pill btn">Languages</button>
-          <button className="btn-download rounded-pill btn">Proficiencies</button>
+          <button className="btn-download rounded-pill btn mb-3">Proficiencies</button>
         </div>
       )}
     </div>
