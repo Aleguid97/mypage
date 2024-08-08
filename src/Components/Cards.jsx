@@ -42,7 +42,7 @@ function Cards() {
             <FaWhatsapp size={40} className="ms-3" />
           </a>
         </span>
-        <div className="text-center mt-3">
+        <div className="text-center m-3">
           <a href="\Docs\Curriculum.pdf" download="Alessio_Guida_CV.pdf">
             <button className="btn-download rounded-pill btn">Download CV</button>
           </a>
