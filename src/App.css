@@ -6,8 +6,9 @@ a:hover {
 }
 
 .app {
-  position: relative;
-  overflow: visible;
+  /* position: relative;
+  overflow: visible; */
+  display: flex;
 }
 
 body {
@@ -67,6 +68,10 @@ ul {
 }
 
 .main {
+  p {
+    font-size: medium;
+    display: flex;
+  }
   width: 100%;
   margin-left: 40%;
 }
@@ -109,7 +114,11 @@ ul {
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .aboutme {
-    font-size: 18px;
+    /* font-size: 18px;
+    width: 100%;
+    padding: 60px;
+    margin-inline: unset; */
+    display: none;
   }
 
   .languages h5,
@@ -126,6 +135,7 @@ ul {
     width: 100%;
     position: static;
     font-size: 30%;
+    margin-top: 20px;
   }
   body {
     display: flex;
@@ -134,19 +144,21 @@ ul {
     flex-direction: column;
   }
 
-  /* .main {
-    margin: auto;
-  } */
+  .main {
+    margin-inline: unset;
+    margin-bottom: 50px;
+    height: 50%;
+    display: none;
+  }
   .technologies {
     width: 100%;
     text-align: center;
     /* margin: auto; */
+    display: none;
   }
-  .aboutme {
-    width: 100%;
-    text-align: center;
-    padding: unset;
-    margin-inline: auto;
+
+  span {
+    margin-inline-start: 20px;
   }
 }
 
@@ -159,4 +171,11 @@ ul {
   height: 1000px;
   transform: rotate(-20deg); /* Ruota l'immagine di -20 gradi */
   object-fit: fill;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
