@@ -6,7 +6,6 @@ import { useMediaQuery } from 'react-responsive';
 import './App.css';
 
 function App() {
-  // Definisci la media query
   const isTabletOrMobile = useMediaQuery({ query: '(min-width: 300px) and (max-width: 768px)' });
 
   return (
@@ -14,12 +13,12 @@ function App() {
       <Cards />
       <Aboutme />
       
-      {/* Mostra i bottoni solo se la larghezza è tra 300px e 768px */}
+      
       {isTabletOrMobile && (
         <div className="buttons-container">
           <button className="btn-download rounded-pill btn">About Me</button>
           <button className="btn-download rounded-pill btn">Languages</button>
-          <button className="btn-download rounded-pill btn mb-3">Proficiencies</button>
+          <button className="btn-download rounded-pill btn mb-4">Proficiencies</button>
         </div>
       )}
     </div>
