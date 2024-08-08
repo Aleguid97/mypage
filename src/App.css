@@ -134,9 +134,9 @@ ul {
     flex-direction: column;
   }
 
-  .main {
+  /* .main {
     margin: auto;
-  }
+  } */
   .technologies {
     width: 100%;
     text-align: center;

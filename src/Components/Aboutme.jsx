@@ -67,7 +67,7 @@ const AboutMeAndLanguages = () => {
           ))}
         </div>
       </div>
-      <div className="technologies mt-3">
+      <div className="technologies mt-2">
         <h5 className="mt-5 fs-2 ">Technologies</h5>
         <div className="d-flex flex-wrap">
           {technologies.map((tech) => (
