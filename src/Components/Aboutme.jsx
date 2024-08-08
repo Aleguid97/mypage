@@ -25,9 +25,9 @@ const AboutMeAndLanguages = () => {
   ];
 
   return (
-    <div className="container main w-50 mt-4 " data-aos="fade-up">
+    <div className="container main w-50 mt-5 " data-aos="fade-up">
       <div className="my-3 aboutme">
-        <h5 className="fs-1">About Me</h5>
+        <h5 className="fs-1 mt-4">About Me</h5>
         <p>
           I am Alessio Guida, a neophyte Full Stack Developer recently emerged from the esoteric and intensive training
           at the eldritch Epicode School. Presently, I seek to unravel the mysteries of my first employment within the
