@@ -38,7 +38,7 @@ function Cards() {
           <a href="https://t.me/Kshatriya1488" target="_blank">
             <FaTelegram size={40} />
           </a>
-          <a href="https://wa.me/3882547822" target="_blank">
+          <a href="https://wa.me/+393882547822" target="_blank">
             <FaWhatsapp size={40} className="ms-3" />
           </a>
         </span>
