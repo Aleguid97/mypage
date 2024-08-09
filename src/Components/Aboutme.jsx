@@ -69,9 +69,9 @@ const AboutMeAndLanguages = () => {
       </div>
       <div className="technologies mt-2 g-5">
         <h4 className="mt-5 fs-2 pt-3">Technologies</h4>
-        <div className="container-icon">
+        <div className="container-icon d-flex nowrap mb-5">
           {technologies.map((tech) => (
-            <div key={tech.name} className="tech-icon mx-1 my-2">
+            <div key={tech.name} className="tech-icon mx-2 my-2">
               <img src={tech.src} alt={`${tech.name} icon`} style={{ width: "50px", height: "50px" }} />
               {/* <div className="text-center">{tech.name}</div> */}
             </div>
