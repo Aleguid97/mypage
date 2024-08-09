@@ -153,7 +153,10 @@ ul {
     margin-inline: unset;
     margin-bottom: 50px;
     height: 50%;
-    display: none;
+    /* display: none; */
+    .languages {
+      display: none;
+    }
   }
   .technologies {
     width: 100%;

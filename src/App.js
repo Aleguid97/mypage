@@ -13,7 +13,7 @@ function App() {
     <Router>
     <div className="App">
       <Cards />
-      <Aboutme />
+      
       
       
       {isTabletOrMobile && (
@@ -22,7 +22,9 @@ function App() {
           <button className="btn-download rounded-pill btn">Languages</button>
           <button className="btn-download rounded-pill btn mb-4">Proficiencies</button>
         </div>
+        
       )}
+      <Aboutme />
     </div>
     </Router>
   );
