@@ -18,9 +18,7 @@ function App() {
       
       {isTabletOrMobile && (
         <div className="buttons-container">
-          <button className="btn-download rounded-pill btn">About Me</button>
-          <button className="btn-download rounded-pill btn">Languages</button>
-          <button className="btn-download rounded-pill btn mb-4">Proficiencies</button>
+          <button className="btn-download rounded-pill btn">About Me</button>      
         </div>
         
       )}
