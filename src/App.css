@@ -160,12 +160,19 @@ ul {
     }
   }
   .technologies {
-    margin-left: 50px;
+    margin-left: auto;
+    text-align: center;
+    flex-direction: row;
+
+    h4 {
+      margin-left: 70px;
+    }
   }
 
-  .tech-icon {
-    display: flex;
-    flex-wrap: nowrap;
+  .tech-icon .mx-2 .my-2 {
+    width: 20px;
+    height: auto;
+    gap: 4px;
   }
 
   span {

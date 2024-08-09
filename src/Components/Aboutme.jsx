@@ -41,7 +41,7 @@ const AboutMeAndLanguages = () => {
           eldritch nature.
         </p>
       </div>
-      <div className="languages" data-aos="fade-down">
+      <div className="languages" data-aos="fade-up">
         <div className="my-3">
           <h5 className="mt-5 fs-2">Languages</h5>
           {languages.map((language, index) => (
@@ -67,9 +67,9 @@ const AboutMeAndLanguages = () => {
           ))}
         </div>
       </div>
-      <div className="technologies mt-2">
-        <h5 className="mt-5 fs-2 pt-3">Technologies</h5>
-        <div className="d-flex flex-wrap mb-5">
+      <div className="technologies mt-2 g-5">
+        <h4 className="mt-5 fs-2 pt-3">Technologies</h4>
+        <div className="d-flex nowrap mb-5">
           {technologies.map((tech) => (
             <div key={tech.name} className="tech-icon mx-2 my-2">
               <img src={tech.src} alt={`${tech.name} icon`} style={{ width: "50px", height: "50px" }} />
