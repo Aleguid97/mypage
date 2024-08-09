@@ -117,6 +117,7 @@ ul {
   margin-bottom: 20px;
 } */
 
+/* <------------------------MEDIA QUERY CELL E TABLET*--------------------->*/
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .aboutme {
     /* font-size: 18px;
@@ -159,10 +160,12 @@ ul {
     }
   }
   .technologies {
-    width: 100%;
-    text-align: center;
-    /* margin: auto; */
-    /* display: none; */
+    margin-left: 50px;
+  }
+
+  .tech-icon {
+    display: flex;
+    flex-wrap: nowrap;
   }
 
   span {
