@@ -23,7 +23,16 @@ function Cards() {
         />
         <h1>Alessio Guida</h1>
         <p className="lead">Jr. Fullstack Developer</p>
-        <p className="description fs-3">Work hard to change the world!</p>
+        <figure>
+          <blockquote class="blockquote">
+            <p style={{ fontFamily: "Vivaldi", fontStyle: "italic", fontSize: "24px" }}>
+              "Elen Sila Lumenn Omentielvo"
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            J.R.R. Tolkien - <cite title="Source Title"> Lord of the rings</cite>
+          </figcaption>
+        </figure>
 
         <span className="container">
           <a href="https://github.com/aleguid97" target="_blank" rel="noopener noreferrer">
