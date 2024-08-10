@@ -21,11 +21,11 @@ const AboutMeAndLanguages = () => {
       name: "C#",
       src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/1024px-C_Sharp_Logo_2023.svg.png",
     },
-    { name: "SQL", src: "https://img.icons8.com/color/48/sql.png" },
+    // { name: "SQL", src: "https://img.icons8.com/color/48/sql.png" },
   ];
 
   return (
-    <div className="container main w-50 mt-5 mb-5 " data-aos="fade-up">
+    <div className="container main mt-5 mb-5 " data-aos="fade-up">
       <div className="my-3 aboutme">
         <h5 className="fs-1 mt-4">About Me</h5>
         <p>
