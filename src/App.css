@@ -172,6 +172,8 @@ ul {
   }
   .technologies {
     display: flex;
+    gap: 1vw;
+
     /* flex-direction: column; */
     /* margin-left: auto; */
     /* text-align: center; */
@@ -190,6 +192,8 @@ ul {
     align-items: center;
     width: 100%; */
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .tech-icon {
