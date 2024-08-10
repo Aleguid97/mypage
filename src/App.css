@@ -138,6 +138,14 @@ ul {
     font-size: 22px;
   }
 
+  cite {
+    font-size: 20px;
+  }
+
+  .blockquote-footer {
+    font-size: 20px;
+  }
+
   .wrapper {
     width: 100%;
     position: static;
@@ -163,11 +171,11 @@ ul {
     }
   }
   .technologies {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    /* flex-direction: column; */
     /* margin-left: auto; */
-    text-align: center;
-    /* flex-direction: row; */
+    /* text-align: center; */
+    flex-direction: row;
     h4 {
       text-align: center;
       display: none;
