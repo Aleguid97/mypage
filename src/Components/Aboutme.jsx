@@ -25,7 +25,7 @@ const AboutMeAndLanguages = () => {
   ];
 
   return (
-    <div className="container w-50 main mt-5 mb-5 " data-aos="fade-up">
+    <div className="container-fluid main mt-5 mb-5 " data-aos="fade-up">
       <div className="my-3 aboutme">
         <h5 className="fs-1 mt-4">About Me</h5>
         <p>
@@ -67,13 +67,13 @@ const AboutMeAndLanguages = () => {
           ))}
         </div>
       </div>
-      <div className="technologies mt-2 row d-flex">
+      <div className=" container-fluid technologies mt-2 row">
         <h4 className="mt-5 mb-4 ms-2 fs-2 pt-3">Technologies</h4>
-        <div className="container-icon w-100 d-flex nowrap mb-5">
-          {technologies.map((tech) => (
-            <img key={tech.name} src={tech.src} alt={`${tech.name} icon`} style={{ width: "70px", height: "49px" }} />
-          ))}
-        </div>
+        {/* <div className="container-icon w-100 d-flex nowrap mb-5"> */}
+        {technologies.map((tech) => (
+          // <div key={tech.name} className="mx-2 my-2">
+          <img src={tech.src} alt={`${tech.name} icon`} style={{ width: "50px", height: "50px" }} />
+        ))}
       </div>
     </div>
     // </div>
