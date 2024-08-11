@@ -13,13 +13,13 @@ function App() {
     <Router>
       <div className="App container-fluid">
         <div className="row">
-          <div className={`col-12 col-md-6 ${isTabletOrMobile ? 'order-2' : ''}`}>
+          <div className={`col-12 col-md-6 ${isTabletOrMobile ? 'order-1' : ''}`}>
             <Cards />
           </div>
 
-          <div className={`col-12 col-md-6 ${isTabletOrMobile ? 'order-1' : ''}`}>
+          <div className={`col-12 col-md-6 ${isTabletOrMobile ? 'order-2' : ''}`}>
             {isTabletOrMobile && (
-              <div className="buttons-container text-center my-3">
+              <div className="buttons-container text-center my-2">
                 <button className="btn-download rounded-pill btn btn-primary">About Me</button>      
               </div>
             )}

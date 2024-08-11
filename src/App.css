@@ -24,6 +24,11 @@ body {
 .wrapper {
   position: fixed;
   top: 10%;
+  left: 10%;
+}
+
+.technologies {
+  margin-left: -17px;
 }
 
 h1 {
@@ -127,12 +132,9 @@ ul {
   }
 
   .technologies {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    margin: unset;
+    padding: unset;
     justify-content: center;
-    align-items: center;
-    /* margin-left: -35%; */
   }
 
   .container-icon {

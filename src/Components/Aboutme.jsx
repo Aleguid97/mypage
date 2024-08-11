@@ -67,8 +67,8 @@ const AboutMeAndLanguages = () => {
           ))}
         </div>
       </div>
-      <div className=" container-fluid technologies mt-2 row">
-        <h4 className="mt-5 mb-4 ms-2 fs-2 pt-3">Technologies</h4>
+      <div className="container technologies">
+        <h4 className="fs-2 pt-3">Technologies</h4>
         {/* <div className="container-icon w-100 d-flex nowrap mb-5"> */}
         {technologies.map((tech) => (
           // <div key={tech.name} className="mx-2 my-2">
@@ -76,7 +76,7 @@ const AboutMeAndLanguages = () => {
         ))}
       </div>
     </div>
-    // </div>
+    // </div>y
   );
 };
 
