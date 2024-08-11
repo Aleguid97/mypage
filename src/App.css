@@ -127,19 +127,14 @@ ul {
     display: none;
   }
 
-  .languages h5,
+  /* .languages h5,
   .technologies h5 {
     font-size: 22px;
-  }
+  } */
 
   .technologies {
-    margin: initial;
-    padding: initial;
     justify-content: center;
-    align-items: center;
-  }
-
-  .container-icon {
+    display: flex;
     flex-wrap: wrap;
   }
 
