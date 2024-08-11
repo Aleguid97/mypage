@@ -67,12 +67,17 @@ const AboutMeAndLanguages = () => {
           ))}
         </div>
       </div>
-      <div className="container technologies">
+      <div className="technologies-container ">
         <h4 className="fs-2 pt-3">Technologies</h4>
         {/* <div className="container-icon w-100 d-flex nowrap mb-5"> */}
         {technologies.map((tech) => (
           // <div key={tech.name} className="mx-2 my-2">
-          <img src={tech.src} alt={`${tech.name} icon`} style={{ width: "50px", height: "50px" }} />
+          <img
+            className="technology-icon"
+            src={tech.src}
+            alt={`${tech.name} icon`}
+            style={{ width: "50px", height: "50px" }}
+          />
         ))}
       </div>
     </div>

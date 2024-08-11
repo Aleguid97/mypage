@@ -132,10 +132,35 @@ ul {
     font-size: 22px;
   } */
 
-  .technologies {
-    justify-content: center;
+  /* Usa Flexbox per centrare le icone */
+  .technologies-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+  }
+
+  .technology-icon {
+    margin: 10px;
+  }
+
+  /* Usa Grid Layout per centrare le icone */
+  .technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    place-items: center;
+  }
+
+  /* Media Queries per layout responsive */
+  @media only screen and (max-width: 600px) {
+    .technologies-container {
+      flex-direction: row;
+    }
+
+    .technologies-grid {
+      grid-template-columns: 1fr;
+    }
   }
 
   cite {
