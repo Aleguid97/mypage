@@ -126,16 +126,27 @@ ul {
 /* <------------------------MEDIA QUERY CELL E TABLET*--------------------->*/
 @media only screen and (min-width: 300px) and (max-width: 932px) {
   .aboutme {
-    /* font-size: 18px;
-    width: 100%;
-    padding: 60px;
-    margin-inline: unset; */
     display: none;
   }
 
   .languages h5,
   .technologies h5 {
     font-size: 22px;
+  }
+
+  .technologies {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: -35%;
+  }
+
+  .container-icon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 
   cite {
@@ -152,40 +163,14 @@ ul {
     font-size: 30%;
     margin-top: 20px;
   }
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+  .languages {
+    display: none;
   }
 
-  .main {
-    width: 100%;
-    display: flex;
-    margin: 0;
-    margin-left: 2%;
-
-    padding: 0;
-    /* display: none; */
-    .languages {
-      display: none;
-    }
-  }
-  .technologies {
-    display: flex;
-    gap: 1vw;
-
-    flex-direction: row;
-    h4 {
-      text-align: center;
-      display: none;
-    }
-  }
-
-  .tech-icon {
-    display: flex;
-    width: 20px;
-    height: auto;
+  h4 {
+    text-align: center;
+    display: none;
   }
 
   span {

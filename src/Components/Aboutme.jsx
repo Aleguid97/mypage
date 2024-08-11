@@ -21,11 +21,11 @@ const AboutMeAndLanguages = () => {
       name: "C#",
       src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/1024px-C_Sharp_Logo_2023.svg.png",
     },
-    // { name: "SQL", src: "https://img.icons8.com/color/48/sql.png" },
+    { name: "SQL", src: "https://img.icons8.com/color/48/sql.png" },
   ];
 
   return (
-    <div className="container main mt-5 mb-5 " data-aos="fade-up">
+    <div className="container w-50 main mt-5 mb-5 " data-aos="fade-up">
       <div className="my-3 aboutme">
         <h5 className="fs-1 mt-4">About Me</h5>
         <p>
@@ -67,15 +67,13 @@ const AboutMeAndLanguages = () => {
           ))}
         </div>
       </div>
-      <div className="technologies mt-2 row">
-        <h4 className="mt-5 mb-4 fs-2 pt-3">Technologies</h4>
-        {/* <div className="container-icon w-100 d-flex nowrap mb-5"> */}
-        {technologies.map((tech) => (
-          <div key={tech.name} className="tech-icon mx-2 my-2 col-1">
-            <img src={tech.src} alt={`${tech.name} icon`} style={{ width: "50px", height: "50px" }} />
-            {/* <div className="text-center">{tech.name}</div> */}
-          </div>
-        ))}
+      <div className="technologies mt-2 row d-flex">
+        <h4 className="mt-5 mb-4 ms-2 fs-2 pt-3">Technologies</h4>
+        <div className="container-icon w-100 d-flex nowrap mb-5">
+          {technologies.map((tech) => (
+            <img key={tech.name} src={tech.src} alt={`${tech.name} icon`} style={{ width: "70px", height: "49px" }} />
+          ))}
+        </div>
       </div>
     </div>
     // </div>
