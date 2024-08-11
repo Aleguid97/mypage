@@ -64,6 +64,7 @@ ul {
   text-decoration: none;
   margin-top: 20px;
   display: inline-block;
+  border: none;
 }
 
 .btn-download:hover {
@@ -132,8 +133,8 @@ ul {
   }
 
   .technologies {
-    margin: unset;
-    padding: unset;
+    margin: initial;
+    padding: inherit;
     justify-content: center;
     align-items: center;
   }
