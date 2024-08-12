@@ -25,8 +25,8 @@ const AboutMeAndLanguages = () => {
   ];
 
   return (
-    <div className="container-fluid main mt-5 mb-5 " data-aos="fade-up">
-      <div className="my-3 aboutme">
+    <div className="container-fluid main mt-5 mb-5">
+      <div className="my-3 aboutme" data-aos="fade-right">
         <h5 className="fs-1 mt-4">About Me</h5>
         <p>
           I am Alessio Guida, a neophyte Full Stack Developer recently emerged from the esoteric and intensive training
@@ -40,8 +40,8 @@ const AboutMeAndLanguages = () => {
           might wield my burgeoning skills, evolve in my craft, and contribute to projects of an innovative and perhaps
           eldritch nature.
         </p>
-      </div>
-      <div className="languages" data-aos="fade-right">
+        {/* </div>
+      <div className="aboutme" data-aos="fade-right"> */}
         <div className="my-3">
           <h5 className="mt-5 fs-2">Languages</h5>
           {languages.map((language, index) => (
@@ -67,7 +67,7 @@ const AboutMeAndLanguages = () => {
           ))}
         </div>
       </div>
-      <div className="technologies-container ">
+      <div className="technologies-container" data-aos="fade-left">
         <h4 className="fs-2 pt-3">Technologies</h4>
         {/* <div className="container-icon w-100 d-flex nowrap mb-5"> */}
         {technologies.map((tech) => (
