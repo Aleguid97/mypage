@@ -25,7 +25,7 @@ const AboutMeAndLanguages = () => {
   ];
 
   return (
-    <div className="container-fluid main mt-5 mb-5 me-5">
+    <div className="container-fluid main mt-5 mb-5">
       <div className="my-3 aboutme" data-aos="fade-right">
         <h5 className="fs-1 mt-4">About Me</h5>
         <p className="description">

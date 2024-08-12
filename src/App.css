@@ -73,12 +73,17 @@ ul {
   color: #faffff;
 }
 
+.transparent-bg {
+  background-color: transparent;
+  mix-blend-mode: multiply;
+}
+
 .main {
   p {
     font-size: medium;
   }
   width: 100%;
-  /* margin-left: 40%; */
+  scroll-margin-inline-start: -20%;
 }
 
 .languages {
