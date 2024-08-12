@@ -28,7 +28,7 @@ function Cards() {
               "Elen Sila Lumenn Omentielvo"
             </p>
           </blockquote>
-          <figcaption className="blockquote-footer">
+          <figcaption className="blockquote-footer my-3">
             J.R.R. Tolkien - <cite title="Source Title">Lord of the Rings</cite>
           </figcaption>
         </figure>
@@ -52,7 +52,7 @@ function Cards() {
         </span>
         <div className="text-center m-3">
           <a href="\Docs\Curriculum.pdf" download="Alessio_Guida_CV.pdf">
-            <button className="btn-download rounded-pill btn">Download CV</button>
+            <button className="btn-download rounded-pill btn mt-2">Download CV</button>
           </a>
         </div>
       </div>
