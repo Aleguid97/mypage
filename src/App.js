@@ -27,10 +27,10 @@ function App() {
             <Cards />
           </div>
 
-          <div className={`col-sm-12 col-md-6 px-1 py-3${isTabletOrMobile ? "order-2" : ""}`}>
+          <div className={`col-sm-12 col-md-6 px-5 py-3${isTabletOrMobile ? "order-2" : ""}`}>
             {isTabletOrMobile && (
-              <div className="buttons-container text-center my-2">
-                <button className="btn-download rounded-pill btn btn-primary" onClick={toggleAboutMe}>
+              <div className="buttons-container text-center">
+                <button className="btn-aboutme rounded-pill btn" onClick={toggleAboutMe}>
                   About Me
                 </button>
               </div>

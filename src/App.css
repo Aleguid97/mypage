@@ -23,7 +23,7 @@ body {
 
 .wrapper {
   position: sticky;
-  top: 5%;
+  top: 10%;
 }
 
 .technologies {
@@ -73,11 +73,6 @@ ul {
   color: #faffff;
 }
 
-.transparent-bg {
-  background-color: transparent;
-  mix-blend-mode: multiply;
-}
-
 .main {
   p {
     font-size: medium;
@@ -93,7 +88,7 @@ ul {
 .progress-bar {
   background-color: #1f706d;
   color: #ffffff;
-  animation: fillBar 2s forwards;
+  animation: fillBar 5s forwards;
 }
 
 @keyframes fillBar {
@@ -138,6 +133,25 @@ ul {
 
   .technology-icon {
     margin: 10px;
+  }
+
+  .btn-download {
+    background-color: #ffffff;
+    color: #0f172a;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    margin-top: 50px;
+  }
+  .btn-aboutme {
+    background-color: #ffffff;
+    color: #0f172a;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    margin-top: unset;
   }
 
   /* Usa Grid Layout per centrare le icone */
@@ -210,11 +224,4 @@ ul {
   height: 50px;
 }
 
-/* @media only screen and (min-width: 1000px) and (max-width: 1500px) {
-  .wrapper {
-    width: 100%;
-    position: static;
-    font-size: 30%;
-    margin-top: 20px;
-  }
-} */
+/* <------------------------ANIMAZIONI*--------------------->*/
