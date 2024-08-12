@@ -250,4 +250,24 @@ ul {
   height: 50px;
 }
 
+.btn-download:hover {
+  background-color: #1f706d;
+  color: #faffff;
+}
+
+.btn-download:focus {
+  background-color: #1f706d;
+  color: #faffff;
+}
+
+.btn-aboutme:hover {
+  background-color: #1f706d;
+  color: #faffff;
+}
+
+.btn-aboutme:focus {
+  background-color: #1f706d;
+  color: #faffff;
+}
+
 /* <------------------------ANIMAZIONI*--------------------->*/
