@@ -22,9 +22,8 @@ body {
 }
 
 .wrapper {
-  position: fixed;
-  top: 10%;
-  left: 10%;
+  position: sticky;
+  top: 5%;
 }
 
 .technologies {
@@ -121,7 +120,7 @@ ul {
 } */
 
 /* <------------------------MEDIA QUERY CELL E TABLET*--------------------->*/
-@media only screen and (min-width: 300px) and (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 932px) {
   .aboutme {
     display: none;
   }
@@ -207,3 +206,12 @@ ul {
   border-radius: 10px;
   height: 50px;
 }
+
+/* @media only screen and (min-width: 1000px) and (max-width: 1500px) {
+  .wrapper {
+    width: 100%;
+    position: static;
+    font-size: 30%;
+    margin-top: 20px;
+  }
+} */

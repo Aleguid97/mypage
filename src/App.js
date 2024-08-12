@@ -7,7 +7,7 @@ import { useMediaQuery } from "react-responsive";
 import "./App.css";
 
 function App() {
-  const isTabletOrMobile = useMediaQuery({ query: "(min-width: 300px) and (max-width: 768px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(min-width: 300px) and (max-width: 932px)" });
 
   const toggleAboutMe = () => {
     const aboutme = document.querySelector(".aboutme");
@@ -23,7 +23,7 @@ function App() {
     <Router>
       <div className="App container-fluid">
         <div className="row">
-          <div className={`col-12 col-md-6 ${isTabletOrMobile ? "order-1" : ""}`}>
+          <div className={`col-sm-12 col-md-6 px-1 py-3 ${isTabletOrMobile ? "order-1" : ""}`}>
             <Cards />
           </div>
 
