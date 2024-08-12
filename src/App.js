@@ -12,8 +12,6 @@ function App() {
   const showAboutMe = () => {
     const aboutme = document.querySelector('.aboutme');
     aboutme.style.display = 'block'; 
-
-
   }
 
   return (

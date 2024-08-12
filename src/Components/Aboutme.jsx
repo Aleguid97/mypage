@@ -40,8 +40,6 @@ const AboutMeAndLanguages = () => {
           might wield my burgeoning skills, evolve in my craft, and contribute to projects of an innovative and perhaps
           eldritch nature.
         </p>
-        {/* </div>
-      <div className="aboutme" data-aos="fade-right"> */}
         <div className="my-3">
           <h5 className="mt-5 fs-2">Languages</h5>
           {languages.map((language, index) => (
@@ -67,7 +65,7 @@ const AboutMeAndLanguages = () => {
           ))}
         </div>
       </div>
-      <div className="technologies-container" data-aos="fade-left">
+      <div className="technologies-container" data-aos="fade-right">
         <h4 className="fs-2 pt-3">Technologies</h4>
         {/* <div className="container-icon w-100 d-flex nowrap mb-5"> */}
         {technologies.map((tech) => (
@@ -81,7 +79,6 @@ const AboutMeAndLanguages = () => {
         ))}
       </div>
     </div>
-    // </div>y
   );
 };
 

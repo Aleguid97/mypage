@@ -23,7 +23,7 @@ function Cards() {
             height={200}
           />
           <h1>Alessio Guida</h1>
-          <p className="lead">Jr. Fullstack Developer</p>
+          <p className="lead">Junior Fullstack Developer</p>
           <figure>
             <blockquote class="blockquote">
               <p style={{ fontFamily: "Vivaldi", fontStyle: "italic", fontSize: "24px" }}>
