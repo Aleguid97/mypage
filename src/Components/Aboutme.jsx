@@ -25,10 +25,10 @@ const AboutMeAndLanguages = () => {
   ];
 
   return (
-    <div className="container-fluid main mt-5 mb-5">
+    <div className="container-fluid main mt-5 mb-5 me-5">
       <div className="my-3 aboutme" data-aos="fade-right">
         <h5 className="fs-1 mt-4">About Me</h5>
-        <p>
+        <p className="description">
           I am Alessio Guida, a neophyte Full Stack Developer recently emerged from the esoteric and intensive training
           at the eldritch Epicode School. Presently, I seek to unravel the mysteries of my first employment within the
           arcane realms of technology. My unquenchable thirst for knowledge propels me to incessantly absorb the latest
