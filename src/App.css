@@ -185,7 +185,7 @@ ul {
     margin-top: 20px;
   }
   .social {
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -206,8 +206,8 @@ ul {
 
 .buttons {
   display: flex;
-  flex-direction: column; /* Imposta la direzione in colonna */
-  align-items: center; /* Centra i pulsanti orizzontalmente */
+  flex-direction: column;
+  align-items: center;
 }
 
 .buttons a,
