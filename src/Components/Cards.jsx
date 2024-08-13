@@ -33,7 +33,7 @@ function Cards() {
           </figcaption>
         </figure>
 
-        <span className="container-fluid social">
+        <span className="container-fluid social w-100">
           <a href="https://github.com/aleguid97" target="_blank" rel="noopener noreferrer">
             <FaGithub size={40} />
           </a>
