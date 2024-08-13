@@ -73,16 +73,6 @@ ul {
   color: #faffff;
 }
 
-.btn-aboutme:hover {
-  background-color: #1f706d;
-  color: #faffff;
-}
-
-.btn-aboutme:focus {
-  background-color: #1f706d;
-  color: #faffff;
-}
-
 .main {
   p {
     font-size: medium;
@@ -152,6 +142,7 @@ ul {
     text-decoration: none;
     display: inline-block;
     border: none;
+    margin-top: 50px;
   }
   .btn-aboutme {
     background-color: #ffffff;
@@ -163,26 +154,7 @@ ul {
     margin-top: unset;
   }
 
-  .btn-download:hover {
-    background-color: #1f706d;
-    color: #faffff;
-  }
-
-  .btn-download:focus {
-    background-color: #1f706d;
-    color: #faffff;
-  }
-
-  .btn-aboutme:hover {
-    background-color: #1f706d;
-    color: #faffff;
-  }
-
-  .btn-aboutme:focus {
-    background-color: #1f706d;
-    color: #faffff;
-  }
-
+  /* Usa Grid Layout per centrare le icone */
   .technologies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -190,6 +162,7 @@ ul {
     place-items: center;
   }
 
+  /* Media Queries per layout responsive */
   @media only screen and (max-width: 600px) {
     .technologies-container {
       flex-direction: row;
@@ -215,6 +188,7 @@ ul {
     margin-top: 20px;
   }
   .social {
+    width: auto;
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -248,26 +222,6 @@ ul {
   background: #1f706d;
   border-radius: 10px;
   height: 50px;
-}
-
-.btn-download:hover {
-  background-color: #1f706d;
-  color: #faffff;
-}
-
-.btn-download:focus {
-  background-color: #1f706d;
-  color: #faffff;
-}
-
-.btn-aboutme:hover {
-  background-color: #1f706d;
-  color: #faffff;
-}
-
-.btn-aboutme:focus {
-  background-color: #1f706d;
-  color: #faffff;
 }
 
 /* <------------------------ANIMAZIONI*--------------------->*/
