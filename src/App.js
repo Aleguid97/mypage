@@ -30,7 +30,7 @@ function App() {
           <div className={`col-sm-12 col-md-6 ${isTabletOrMobile ? "order-2" : ""}`}>
             {isTabletOrMobile && (
               <div className="buttons-container text-center">
-                <button className="btn-aboutme rounded-pill btn" onClick={toggleAboutMe}>
+                <button className="btn-aboutme rounded-pill btn mt-3" onClick={toggleAboutMe}>
                   About Me
                 </button>
               </div>

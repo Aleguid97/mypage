@@ -240,6 +240,7 @@ ul {
   text-decoration: none;
   display: inline-block;
   border: none;
+  /* margin-top: 20px; */
 }
 
 .btn-aboutme:hover {
