@@ -62,13 +62,26 @@ ul {
   display: inline-block;
   border: none;
 }
+.btn-aboutme {
+  background-color: #ffffff;
+  color: #0f172a;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+}
 
 .btn-download:hover {
   background-color: #1f706d;
   color: #faffff;
 }
 
-.btn-download:focus {
+/* .btn-download:focus {
+  background-color: #1f706d;
+  color: #faffff;
+} */
+
+.btn-aboutme:hover {
   background-color: #1f706d;
   color: #faffff;
 }
@@ -194,6 +207,31 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
+.btn-download:hover {
+  background-color: #1f706d;
+  color: #faffff;
+}
+
+/* .btn-download:focus {
+  background-color: #1f706d;
+  color: #faffff;
+} */
+
+.btn-aboutme {
+  background-color: #ffffff;
+  color: #0f172a;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+}
+
+.btn-aboutme:hover {
+  background-color: #1f706d;
+  color: #faffff;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   border-radius: 10px;
