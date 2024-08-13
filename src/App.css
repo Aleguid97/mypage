@@ -71,6 +71,20 @@ ul {
   border: none;
 }
 
+.btn-projects {
+  background-color: #ffffff;
+  color: #0f172a;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+}
+
+.btn-projects:hover {
+  background-color: #1f706d;
+  color: #faffff;
+}
+
 .btn-download:hover {
   background-color: #1f706d;
   color: #faffff;
@@ -131,7 +145,7 @@ ul {
 } */
 
 /* <------------------------MEDIA QUERY CELL E TABLET*--------------------->*/
-@media only screen and (min-width: 300px) and (max-width: 932px) {
+@media only screen and (min-width: 350px) and (max-width: 932px) {
   .aboutme {
     display: none;
   }
@@ -154,17 +168,6 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
     place-items: center;
-  }
-
-  /* Media Queries per layout responsive */
-  @media only screen and (max-width: 600px) {
-    .technologies-container {
-      flex-direction: row;
-    }
-
-    .technologies-grid {
-      grid-template-columns: 1fr;
-    }
   }
 
   cite {
@@ -199,6 +202,23 @@ ul {
   span {
     margin-inline-start: 20px;
   }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column; /* Imposta la direzione in colonna */
+  align-items: center; /* Centra i pulsanti orizzontalmente */
+}
+
+.buttons a,
+.buttons button {
+  /* width: 70%; */
+  margin-bottom: 10px;
+}
+
+.buttons a:last-child,
+.buttons button:last-child {
+  margin-bottom: 0;
 }
 
 .description {
@@ -262,4 +282,15 @@ ul {
   background: #1f706d;
   border-radius: 10px;
   height: 50px;
+}
+
+/* Media Queries per layout responsive */
+@media only screen and (max-width: 600px) {
+  .technologies-container {
+    flex-direction: row;
+  }
+
+  .technologies-grid {
+    grid-template-columns: 1fr;
+  }
 }

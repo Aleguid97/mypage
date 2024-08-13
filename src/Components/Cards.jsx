@@ -50,11 +50,11 @@ function Cards() {
             <FaWhatsapp size={40} className="ms-3" />
           </a>
         </span>
-        <div className="text-center mt-5">
+        <div className="text-center buttons mt-5">
           <a href="\Docs\Curriculum.pdf" download="Alessio_Guida_CV.pdf">
-            <button className="btn-download rounded-pill btn">Download CV</button>
+            <button className="btn-download rounded-pill btn w-100">Scarica CV</button>
           </a>
-          <button className="btn-aboutme rounded-pill btn ms-3">Projects</button>
+          <button className="btn-projects rounded-pill btn">Projects</button>
         </div>
       </div>
     </div>
