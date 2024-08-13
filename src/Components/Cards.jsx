@@ -11,29 +11,29 @@ function Cards() {
   }, []); // Aggiunta la dipendenza vuota per eseguire l'init solo una volta
 
   return (
-    <div className="wrapper" data-aos="fade-down">
+    <div className="wrapper">
       <div className="container text-center">
         <img
           src="AvatarMaker.png"
           alt="Alessio Guida"
           className="rounded-circle profile-img shadow"
-          width={200}
-          height={200}
+          width={150}
+          height={150}
         />
-        <h1>Alessio Guida</h1>
-        <p className="lead">Junior Fullstack Developer</p>
-        <figure>
+        <h1 className="m-0">Alessio Guida</h1>
+        <p className="lead mb-1 ">Junior Fullstack Developer</p>
+        <figure classname="m-0">
           <blockquote className="blockquote">
             <p style={{ fontFamily: "Vivaldi", fontStyle: "italic", fontSize: "24px" }}>
               "Elen Sila Lumenn Omentielvo"
             </p>
           </blockquote>
-          <figcaption className="blockquote-footer my-3">
+          <figcaption className="blockquote-footer">
             J.R.R. Tolkien - <cite title="Source Title">Lord of the Rings</cite>
           </figcaption>
         </figure>
 
-        <span className="container social">
+        <span className="container-fluid social">
           <a href="https://github.com/aleguid97" target="_blank" rel="noopener noreferrer">
             <FaGithub size={40} />
           </a>
@@ -50,10 +50,11 @@ function Cards() {
             <FaWhatsapp size={40} className="ms-3" />
           </a>
         </span>
-        <div className="text-center m-3">
+        <div className="text-center mt-5">
           <a href="\Docs\Curriculum.pdf" download="Alessio_Guida_CV.pdf">
-            <button className="btn-download rounded-pill btn mt-2">Download CV</button>
+            <button className="btn-download rounded-pill btn">Download CV</button>
           </a>
+          <button className="btn-aboutme rounded-pill btn ms-3">Projects</button>
         </div>
       </div>
     </div>

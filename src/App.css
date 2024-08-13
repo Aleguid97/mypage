@@ -12,6 +12,7 @@ a:hover {
 }
 
 body {
+  box-sizing: border-box;
   background: #0f172a;
   font-family: "Roboto Mono", monospace;
   color: #e2e8f0;
@@ -23,7 +24,7 @@ body {
 
 .wrapper {
   position: sticky;
-  top: 5%;
+  top: 4rem;
 }
 
 .technologies {
@@ -33,12 +34,11 @@ body {
 h1 {
   font-weight: 700;
   font-size: 3.5rem;
-  margin-bottom: 20px;
 }
 
 .lead {
   font-size: 40px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   /* margin-top: -30px; */
 }
 
@@ -201,11 +201,26 @@ ul {
   }
 }
 
+.description {
+  text-align: left;
+}
+
 .buttons-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+
+.btn-download {
+  background-color: #ffffff;
+  color: #0f172a;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  height: 50%;
 }
 
 .btn-download:hover {
@@ -213,10 +228,10 @@ ul {
   color: #faffff;
 }
 
-/* .btn-download:focus {
+.btn-download:focus {
   background-color: #1f706d;
   color: #faffff;
-} */
+}
 
 .btn-aboutme {
   background-color: #ffffff;
@@ -228,6 +243,11 @@ ul {
 }
 
 .btn-aboutme:hover {
+  background-color: #1f706d;
+  color: #faffff;
+}
+
+.btn-aboutme:focus {
   background-color: #1f706d;
   color: #faffff;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "aos/dist/aos.css";
+import { Carousel } from "react-bootstrap";
 
 const AboutMeAndLanguages = () => {
   const languages = [
@@ -26,8 +27,8 @@ const AboutMeAndLanguages = () => {
 
   return (
     <div className="container-fluid main mt-5 mb-5">
-      <div className="my-3 aboutme" data-aos="fade-right">
-        <h5 className="fs-1 mt-4">About Me</h5>
+      <div className="aboutme" data-aos="fade-right">
+        <h5 className="fs-1">About Me</h5>
         <p className="description">
           I am Alessio Guida, a neophyte Full Stack Developer recently emerged from the esoteric and intensive training
           at the eldritch Epicode School. Presently, I seek to unravel the mysteries of my first employment within the
