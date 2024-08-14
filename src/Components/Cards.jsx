@@ -21,7 +21,7 @@ function Cards() {
           height={150}
         />
         <h1 className="m-0">Alessio Guida</h1>
-        <p className="lead mb-1 ">Junior Fullstack Developer</p>
+        <p className="lead mb-4">Junior Fullstack Developer</p>
         <figure classname="m-0">
           <blockquote className="blockquote">
             <p style={{ fontFamily: "Vivaldi", fontStyle: "italic", fontSize: "24px" }}>
@@ -33,7 +33,7 @@ function Cards() {
           </figcaption>
         </figure>
 
-        <span className="container-fluid social w-100">
+        <span className="container social">
           <a href="https://github.com/aleguid97" target="_blank" rel="noopener noreferrer">
             <FaGithub size={40} />
           </a>

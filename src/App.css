@@ -206,14 +206,15 @@ ul {
 
 .buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .buttons a,
 .buttons button {
   /* width: 70%; */
-  margin-bottom: 10px;
+  margin-inline-end: 10px;
 }
 
 .buttons a:last-child,
@@ -240,7 +241,6 @@ ul {
   text-decoration: none;
   display: inline-block;
   border: none;
-  height: 50%;
 }
 
 .btn-download:hover {
@@ -260,7 +260,6 @@ ul {
   text-decoration: none;
   display: inline-block;
   border: none;
-  /* margin-top: 20px; */
 }
 
 .btn-aboutme:hover {
@@ -282,6 +281,10 @@ ul {
   background: #1f706d;
   border-radius: 10px;
   height: 50px;
+}
+
+.lead {
+  margin-top: 15px;
 }
 
 /* Media Queries per layout responsive */
