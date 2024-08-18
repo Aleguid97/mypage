@@ -1,28 +1,37 @@
 import React, { useEffect } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import AOS from "aos";
+import { Link, useNavigate } from "react-router-dom";
 import "aos/dist/aos.css";
 
 function Cards() {
+  const navigate = useNavigate();
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
     });
   }, []); // Aggiunta la dipendenza vuota per eseguire l'init solo una volta
 
+  const handleProjectsClick = () => {
+    navigate("/projects");
+    // const tech = document.querySelector(".technologies-container");
+    // tech.style.visibility = "hidden";
+  };
+
   return (
     <div className="wrapper">
       <div className="container text-center">
         <img
-          src="AvatarMaker.png"
+          src="Propic.jpg"
           alt="Alessio Guida"
           className="rounded-circle profile-img shadow"
-          width={150}
-          height={150}
+          width={200}
+          height={200}
         />
         <h1 className="m-0">Alessio Guida</h1>
         <p className="lead mb-4">Junior Fullstack Developer</p>
-        <figure classname="m-0">
+        <figure className="m-0">
           <blockquote className="blockquote">
             <p style={{ fontFamily: "Vivaldi", fontStyle: "italic", fontSize: "24px" }}>
               "Elen Sila Lumenn Omentielvo"
@@ -52,9 +61,11 @@ function Cards() {
         </span>
         <div className="text-center buttons mt-5">
           <a href="\Docs\Curriculum.pdf" download="Alessio_Guida_CV.pdf">
-            <button className="btn-download rounded-pill btn w-100">Scarica CV</button>
+            <button className="btn-download rounded-pill btn w-100">Download CV</button>
           </a>
-          <button className="btn-projects rounded-pill btn">Projects</button>
+          <button className="btn-projects rounded-pill btn" onClick={handleProjectsClick}>
+            Projects
+          </button>
         </div>
       </div>
     </div>

@@ -66,7 +66,7 @@ const AboutMeAndLanguages = () => {
           ))}
         </div>
       </div>
-      <div className="technologies-container" data-aos="fade-right">
+      <div className="technologies-container m-0" data-aos="fade-right">
         <h4 className="fs-2 pt-3">Technologies</h4>
         {/* <div className="container-icon w-100 d-flex nowrap mb-5"> */}
         {technologies.map((tech) => (

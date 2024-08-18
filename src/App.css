@@ -26,6 +26,15 @@ body {
   position: sticky;
   top: 4rem;
 }
+.profile-img {
+  filter: grayscale(100%);
+  object-fit: cover;
+  transition: transform 0.6s ease-in-out; /* Aggiungi una transizione per l'animazione */
+}
+
+.profile-img:hover {
+  transform: rotateY(180deg); /* Applica un flip orizzontale al passaggio del mouse */
+}
 
 .technologies {
   margin-left: -17px;
@@ -69,6 +78,40 @@ ul {
   text-decoration: none;
   display: inline-block;
   border: none;
+}
+
+.projects {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: none;
+}
+.carousel-indicators {
+  background-color: #1f706d;
+  border-radius: 50px;
+}
+
+/* .carousel-item {
+
+} */
+.carousel-indicators {
+  position: absolute;
+  right: 22%;
+
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.fixed-size-video {
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .btn-projects {
@@ -139,6 +182,10 @@ ul {
   height: 50px;
 }
 
+.carousel-item img {
+  object-fit: cover; /* Assicurati che le immagini non siano distorte */
+}
+
 /* .aboutme {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -155,7 +202,6 @@ ul {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 80px;
   }
 
   .technology-icon {
@@ -202,6 +248,17 @@ ul {
   span {
     margin-inline-start: 20px;
   }
+}
+
+.carousel-indicators {
+  background-color: #1f706d;
+  border-radius: 50px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 13%;
+  display: none;
 }
 
 .buttons {
@@ -295,5 +352,73 @@ ul {
 
   .technologies-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* .scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #0f172a;
+  padding: 20px 10px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: #1f706d;
+  color: #faffff;
+} */
+
+.play-btn {
+  font-size: xx-large;
+  position: fixed;
+  bottom: 0;
+  right: 0; /* Cambia left in right */
+  z-index: 1000;
+  padding: 10px 20px;
+  border: none;
+}
+
+/* Aggiungi una media query per schermi piccoli */
+@media only screen and (max-width: 600px) {
+  .fixed-size-video {
+    width: 100%; /* Larghezza del 100% per adattarsi al contenitore */
+    height: auto; /* Altezza automatica per mantenere le proporzioni */
+  }
+
+  .carousel-indicators {
+    bottom: 10px; /* Posiziona gli indicatori in basso per migliorare la visibilità */
+    left: 40%;
+    transform: translateX(-50%);
+    width: 70%; /* Riduci la larghezza degli indicatori */
+  }
+
+  .carousel-indicators li {
+    width: 10px; /* Riduci le dimensioni degli indicatori */
+    height: 10px;
+  }
+}
+
+/* Media query per schermi medi */
+@media only screen and (min-width: 601px) and (max-width: 932px) {
+  .fixed-size-video {
+    width: 90%; /* Ridimensiona per schermi medi */
+    height: auto; /* Mantieni le proporzioni */
+  }
+
+  .carousel-indicators {
+    bottom: 15px; /* Posiziona gli indicatori in basso */
+    left: 20%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    width: 80%; /* Adatta la larghezza */
+  }
+
+  .carousel-indicators li {
+    width: 12px;
+    height: 12px;
   }
 }

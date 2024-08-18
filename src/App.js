@@ -1,9 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Cards from "./Components/Cards.jsx";
 import Aboutme from "./Components/Aboutme.jsx";
 import { useMediaQuery } from "react-responsive";
+import Projects from "./Components/Projects.jsx";
 import "./App.css";
 
 function App() {
@@ -11,12 +12,7 @@ function App() {
 
   const toggleAboutMe = () => {
     const aboutme = document.querySelector(".aboutme");
-
-    if (aboutme.style.display === "none") {
-      aboutme.style.display = "block";
-    } else {
-      aboutme.style.display = "none";
-    }
+    aboutme.style.display = aboutme.style.display === "none" ? "block" : "none";
   };
 
   return (
@@ -35,9 +31,15 @@ function App() {
                 </button>
               </div>
             )}
+
             <Aboutme />
+            <Routes>
+              <Route path="/projects" element={<Projects />} />
+            </Routes>
           </div>
         </div>
+
+        <button className="play-btn rounded-pill btn">🕹️</button>
       </div>
     </Router>
   );
