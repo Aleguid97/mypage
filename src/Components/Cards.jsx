@@ -23,7 +23,7 @@ function Cards() {
     <div className="wrapper">
       <div className="container text-center">
         <img
-          src="Propic.jpg"
+          src="ProPic.jpg"
           alt="Alessio Guida"
           className="rounded-circle profile-img shadow"
           width={200}

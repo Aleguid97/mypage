@@ -1,6 +1,5 @@
 import React from "react";
 import "aos/dist/aos.css";
-import { Carousel } from "react-bootstrap";
 
 const AboutMeAndLanguages = () => {
   const languages = [
