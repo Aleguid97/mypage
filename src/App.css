@@ -4,7 +4,7 @@
 @import url("https://fonts.cdnfonts.com/css/elvish");
 
 a:hover {
-  color: #1f706d;
+  color: crimson;
 }
 
 .app {
@@ -12,14 +12,18 @@ a:hover {
 }
 
 body {
+  background: linear-gradient(90deg, rgb(2, 56, 89), rgb(36, 89, 123), rgb(80, 130, 180));
   box-sizing: border-box;
-  background: #0f172a;
   font-family: "Roboto Mono", monospace;
+  margin: 0;
+  padding: 0;
+  /* height: 200vh; */
+  transition: background 1s ease-in-out;
   color: #e2e8f0;
-  a {
-    color: #e2e8f0;
-    text-decoration: none;
-  }
+}
+a {
+  color: #e2e8f0;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -55,6 +59,12 @@ h1 {
   text-align: justify;
 }
 
+.bautmi {
+  background-color: crimson;
+  border-radius: 50px;
+  padding-left: 20px;
+}
+
 ul {
   list-style: none;
   li {
@@ -81,7 +91,7 @@ ul {
 }
 
 .projects {
-  margin-top: 100px;
+  margin-top: 300px;
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -91,7 +101,7 @@ ul {
   display: none;
 }
 .carousel-indicators {
-  background-color: #1f706d;
+  background-color: crimson;
   border-radius: 50px;
 }
 
@@ -106,8 +116,8 @@ ul {
   margin-left: 10%;
 }
 .fixed-size-video {
-  width: 800px;
-  height: 400px;
+  /* width: 70%;
+  height: 50%; */
   object-fit: cover;
   border-radius: 30px;
   flex-direction: column;
@@ -124,22 +134,22 @@ ul {
 }
 
 .btn-projects:hover {
-  background-color: #1f706d;
+  background-color: crimson;
   color: #faffff;
 }
 
 .btn-download:hover {
-  background-color: #1f706d;
+  background-color: crimson;
   color: #faffff;
 }
 
 /* .btn-download:focus {
-  background-color: #1f706d;
+  background-color:crimson;
   color: #faffff;
 } */
 
 .btn-aboutme:hover {
-  background-color: #1f706d;
+  background-color: crimson;
   color: #faffff;
 }
 
@@ -156,7 +166,7 @@ ul {
 }
 
 .progress-bar {
-  background-color: #1f706d;
+  background-color: crimson;
   color: #ffffff;
   animation: fillBar 2s forwards;
 }
@@ -177,7 +187,7 @@ ul {
 
 ::-webkit-scrollbar-thumb {
   /* background: linear-gradient(to bottom, #031144, #02321d); */
-  background: #1f706d;
+  background: crimson;
   border-radius: 10px;
   height: 50px;
 }
@@ -251,7 +261,7 @@ ul {
 }
 
 .carousel-indicators {
-  background-color: #1f706d;
+  background-color: crimson;
   border-radius: 50px;
 }
 
@@ -301,12 +311,12 @@ ul {
 }
 
 .btn-download:hover {
-  background-color: #1f706d;
+  background-color: crimson;
   color: #faffff;
 }
 
 .btn-download:focus {
-  background-color: #1f706d;
+  background-color: crimson;
   color: #faffff;
 }
 
@@ -320,12 +330,12 @@ ul {
 }
 
 .btn-aboutme:hover {
-  background-color: #1f706d;
+  background-color: crimson;
   color: #faffff;
 }
 
 .btn-aboutme:focus {
-  background-color: #1f706d;
+  background-color: crimson;
   color: #faffff;
 }
 
@@ -335,7 +345,7 @@ ul {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1f706d;
+  background: crimson;
   border-radius: 10px;
   height: 50px;
 }
@@ -368,7 +378,7 @@ ul {
 }
 
 .scroll-to-top-btn:hover {
-  background-color: #1f706d;
+  background-color:crimson;
   color: #faffff;
 } */
 
@@ -384,10 +394,10 @@ ul {
 
 /* Aggiungi una media query per schermi piccoli */
 @media only screen and (max-width: 600px) {
-  .fixed-size-video {
-    width: 100%; /* Larghezza del 100% per adattarsi al contenitore */
-    height: auto; /* Altezza automatica per mantenere le proporzioni */
-  }
+  /* .fixed-size-video {
+    width: 100%;
+    height: auto;
+  } */
 
   .carousel-indicators {
     bottom: 10px; /* Posiziona gli indicatori in basso per migliorare la visibilità */
@@ -404,10 +414,10 @@ ul {
 
 /* Media query per schermi medi */
 @media only screen and (min-width: 601px) and (max-width: 932px) {
-  .fixed-size-video {
-    width: 90%; /* Ridimensiona per schermi medi */
-    height: auto; /* Mantieni le proporzioni */
-  }
+  /* .fixed-size-video {
+    width: 90%; 
+    height: auto;
+  } */
 
   .carousel-indicators {
     bottom: 15px; /* Posiziona gli indicatori in basso */

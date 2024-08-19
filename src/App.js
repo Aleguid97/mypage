@@ -14,6 +14,24 @@ function App() {
     const aboutme = document.querySelector(".aboutme");
     aboutme.style.display = aboutme.style.display === "none" ? "block" : "none";
   };
+  window.addEventListener("scroll", () => {
+    const scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+    // Colore fisso per il primo colore
+    const color1 = `rgb(2, 56, 89)`; // rgb(2, 56, 89) corrisponde a #023859
+
+    // Colore mediatore fisso
+    const color2 = `rgb(36, 89, 123)`; // Un colore intermedio tra il primo e il terzo colore
+
+    // Colore finale che cambia verso un tono più chiaro
+    const color3 = `rgb(${Math.min(50 + scrollPercentage * 150, 200)}, ${Math.min(
+      150 + scrollPercentage * 100,
+      250
+    )}, ${Math.min(180 + scrollPercentage * 80, 255)})`;
+
+    // Applica il gradiente di sfondo con il primo colore fisso, il mediatore fisso e il terzo colore che cambia
+    document.body.style.background = `linear-gradient(90deg, ${color1}, ${color2}, ${color3})`;
+  });
 
   return (
     <Router>

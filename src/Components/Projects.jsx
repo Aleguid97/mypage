@@ -21,7 +21,7 @@ function Projects() {
         <h5 className="fs-2 text-left mb-3">Projects</h5>
         <Carousel>
           <Carousel.Item>
-            <video className="fixed-size-video" width="800" height="400" autoPlay loop muted>
+            <video className="fixed-size-video" autoPlay loop muted width={800} height={400}>
               <source src="/Presentazione_FruitfyMarket.mp4" type="video/mp4" />
             </video>
             <Carousel.Caption></Carousel.Caption>
