@@ -40,6 +40,10 @@ a {
   transform: rotateY(180deg); /* Applica un flip orizzontale al passaggio del mouse */
 }
 
+.blockquote-footer {
+  color: #fff;
+}
+
 .technologies {
   margin-left: -17px;
 }
@@ -394,10 +398,10 @@ ul {
 
 /* Aggiungi una media query per schermi piccoli */
 @media only screen and (max-width: 600px) {
-  /* .fixed-size-video {
+  .fixed-size-video {
     width: 100%;
     height: auto;
-  } */
+  }
 
   .carousel-indicators {
     bottom: 10px; /* Posiziona gli indicatori in basso per migliorare la visibilità */
