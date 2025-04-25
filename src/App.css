@@ -147,10 +147,6 @@ ul {
   color: #faffff;
 }
 
-/* .btn-download:focus {
-  background-color:crimson;
-  color: #faffff;
-} */
 
 .btn-aboutme:hover {
   background-color: crimson;
@@ -200,10 +196,6 @@ ul {
   object-fit: cover; /* Assicurati che le immagini non siano distorte */
 }
 
-/* .aboutme {
-  margin-top: 20px;
-  margin-bottom: 20px;
-} */
 
 /* <------------------------MEDIA QUERY CELL E TABLET*--------------------->*/
 @media only screen and (min-width: 350px) and (max-width: 932px) {
@@ -369,22 +361,6 @@ ul {
   }
 }
 
-/* .scroll-to-top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #ffffff;
-  color: #0f172a;
-  padding: 20px 10px;
-  text-decoration: none;
-  display: inline-block;
-  border: none;
-}
-
-.scroll-to-top-btn:hover {
-  background-color:crimson;
-  color: #faffff;
-} */
 
 .play-btn {
   font-size: xx-large;
