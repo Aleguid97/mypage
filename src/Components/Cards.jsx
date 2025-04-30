@@ -11,8 +11,7 @@ function Cards() {
     AOS.init({
       duration: 2000,
     });
-  }, []); // Aggiunta la dipendenza vuota per eseguire l'init solo una volta
-
+  }, []); 
   const handleProjectsClick = () => {
     navigate("/projects");
     // const tech = document.querySelector(".technologies-container");
@@ -21,6 +20,7 @@ function Cards() {
 
   return (
     <div className="wrapper">
+     
       <div className="container text-center">
         <img
           src="ProPic.jpg"

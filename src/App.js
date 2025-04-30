@@ -31,19 +31,7 @@ function App() {
       document.body.style.backgroundSize = "400% 400%";
       document.body.style.backgroundAttachment = "fixed";
     } 
-    // iPhone 16 Pro - Vibrant creative gradient (purples and warm accents)
-    else if (isIphone16Pro) {
-      document.body.style.background = `linear-gradient(
-        150deg, 
-        rgb(75, 29, 97) 0%, 
-        rgb(85, 22, 65) 30%, 
-        rgb(81, 14, 23) 60%, 
-        rgb(95, 40, 32) 85%, 
-        rgb(90, 35, 25) 100%
-      )`;
-      document.body.style.backgroundSize = "300% 300%";
-      document.body.style.backgroundAttachment = "fixed";
-    }
+   
     // Other tablets and mobile devices - Deep sophisticated blues
     else {
       document.body.style.background = `linear-gradient(
@@ -77,10 +65,43 @@ function App() {
     }
   };
 
+//funzione per sostiture la descrizione in inglese con quella in italiano
+const toggleAboutMeIta = () => {
+  const elements = [
+    document.querySelector(".description"),
+    document.querySelector(".descriptionIta"),
+    document.querySelector(".langEn"),
+    document.querySelector(".langIt"),
+    document.querySelector(".tecEn"),
+    document.querySelector(".tecIta"),
+    document.querySelector(".aben"),
+    document.querySelector(".abit"),
+    document.querySelector(".flagIta"),
+    document.querySelector(".flagEn"),
+  ];
+
+  elements.forEach(element => {
+    if (element) {
+      element.classList.toggle("d-none");
+    }
+  });
+};
+
+
+
+
+
   return (
     <Router>
       <div className="App container-fluid">
         <div className="row">
+        <div className="ita"> 
+        <button className="btn-ita btn border-0" onClick={toggleAboutMeIta}>
+          <img src="Ita.svg.png" alt="Italian Flag" className="flagIta d-block mt-1" width={50} height={30} />
+          <img src="En.svg.png" alt="English Flag" className="flagEn d-none" width={50} height={30} />
+
+        </button>
+      </div>
           <div className={`col-sm-12 col-md-6 ${isTabletOrMobile ? "order-1" : ""}`}>
             <Cards />
           </div>

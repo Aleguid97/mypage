@@ -28,9 +28,10 @@ const AboutMeAndLanguages = () => {
     <div className="container-fluid main mt-5 mb-5">
       <div className="aboutme" data-aos="fade-right">
         {/* <div className="bautmi"> */}
-        <h5 className="fs-1">About Me</h5>
+        <h5 className="fs-1 d-block aben">About Me</h5>
+        <h5 className="fs-1 d-none abit">Su di me</h5>
         {/* </div> */}
-        <p className="description">
+        <p className="description d-block">
           My name is Alessio Guida, and I am a Junior Full Stack Developer. I'm looking for my first experience working
           in the world of technology, with the aim of applying the skills acquired and continuing to grow in a
           stimulating environment. My passion for learning drives me to keep up with the latest technological
@@ -40,8 +41,19 @@ const AboutMeAndLanguages = () => {
           team, where I can contribute to innovative project and contine to develop my technical and professional
           skills.
         </p>
+
+        <p className="descriptionIta d-none">
+        Mi chiamo Alessio Guida e sono un Junior Full Stack Developer.
+        Sto cercando la mia prima esperienza lavorativa nel mondo della tecnologia, con l'obiettivo di applicare le competenze acquisite e continuare a crescere in un ambiente stimolante.
+        La mia passione per l'apprendimento mi spinge a rimanere aggiornato sulle ultime innovazioni tecnologiche e ad affrontare nuove sfide con determinazione.
+        Al di fuori del lavoro, sono un appassionato di videogiochi, cinema e serie TV, ma non disdegno una bella e lunga sessione di Dungeons & Dragons con gli amici.
+        Inoltre, amo la lettura, in particolare il genere fantasy, con autori come Tolkien e Lovecraft.
+        Attualmente, il mio obiettivo è entrare a far parte di un team dinamico, dove poter contribuire a progetti innovativi e continuare a sviluppare le mie competenze tecniche e professionali.
+        </p>
+
         <div className="my-3">
-          <h5 className="mt-5 fs-2">Languages</h5>
+          <h5 className="mt-5 fs-2 langEn d-block">Languages</h5>
+          <h5 className="mt-5 fs-2 langIt d-none">Lingue</h5>
           {languages.map((language, index) => (
             <div key={index} className="mb-3">
               <div className="d-flex justify-content-between">
@@ -66,7 +78,8 @@ const AboutMeAndLanguages = () => {
         </div>
       </div>
       <div className="technologies-container m-0" data-aos="fade-right">
-        <h4 className="fs-2 pt-3">Technologies</h4>
+        <h4 className="fs-2 pt-3 tecEn">Technologies</h4>
+        <h4 className="fs-2 pt-3 tecIta d-none">Tecnologie</h4>
         {/* <div className="container-icon w-100 d-flex nowrap mb-5"> */}
         {technologies.map((tech) => (
           // <div key={tech.name} className="mx-2 my-2">

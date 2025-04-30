@@ -44,6 +44,17 @@ a {
   color: #fff;
 }
 
+.btn-ita{
+
+  
+    position: fixed;
+    top: 0;
+    right:  0; 
+    z-index: 1000;
+    padding: 10px 20px;
+    border: none;
+  }
+
 .technologies {
   margin-left: -17px;
 }
@@ -199,6 +210,7 @@ ul {
 
 /* <------------------------MEDIA QUERY CELL E TABLET*--------------------->*/
 @media only screen and (min-width: 350px) and (max-width: 932px) {
+  
   .aboutme {
     display: none;
   }
@@ -208,6 +220,10 @@ ul {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .tecEn{
+    display: none;
   }
 
   .technology-icon {
@@ -371,6 +387,7 @@ ul {
   padding: 10px 20px;
   border: none;
 }
+
 
 /* Aggiungi una media query per schermi piccoli */
 @media only screen and (max-width: 600px) {
