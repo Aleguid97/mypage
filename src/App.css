@@ -175,20 +175,13 @@ ul {
   background-color: crimson;
   color: #faffff;
 }
-.btn-ingrandisci:focus {
-  background-color: crimson;
-  color: #faffff;
-}
+
 
 .arrow {
     color: #fff;
   }
 
   .arrow:hover {
-    color: crimson;
-  }
-
-  .arrow:focus {
     color: crimson;
   }
 
@@ -247,26 +240,8 @@ ul {
     display: none;
   }
 
-  .technologies-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  /* .flagIta, .flagEng {
-    width: 30px;
-    height: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-  } */
-   
   
 
-
-  .technology-icon {
-    margin: 10px;
-  }
 
   /* Usa Grid Layout per centrare le icone */
   .technologies-grid {
@@ -354,10 +329,6 @@ ul {
   color: #faffff;
 }
 
-.btn-download:focus {
-  background-color: crimson;
-  color: #faffff;
-}
 
 .btn-aboutme {
   background-color: #ffffff;
@@ -371,11 +342,6 @@ ul {
 
 
 .btn-aboutme:hover {
-  background-color: crimson;
-  color: #faffff;
-}
-
-.btn-aboutme:focus {
   background-color: crimson;
   color: #faffff;
 }
@@ -394,10 +360,6 @@ ul {
   color: #faffff;
 }
 
-.btn-projects:focus {
-  background-color: crimson;
-  color: #faffff;
-}
 
 
 

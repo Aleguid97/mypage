@@ -6,12 +6,10 @@ import { useMediaQuery } from "react-responsive";
 function Home() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 932px)" });
   const [showItalian, setShowItalian] = useState(false);
+  const [showAboutMe, setShowAboutMe] = useState(false);
 
   const toggleAboutMe = () => {
-    const aboutme = document.querySelector(".aboutme");
-    if (aboutme) {
-      aboutme.style.display = aboutme.style.display === "none" ? "block" : "none";
-    }
+    setShowAboutMe(prev => !prev);
   };
 
   const toggleAboutMeIta = () => {
@@ -53,7 +51,13 @@ function Home() {
             </button>
           </div>
         )}
-        <Aboutme showItalian={showItalian} />
+        
+        {/* Passa le props necessarie per controllare la visibilità */}
+        <Aboutme 
+          showItalian={showItalian} 
+          showAboutMe={showAboutMe}
+          isTabletOrMobile={isTabletOrMobile}
+        />
       </div>
     </div>
   );

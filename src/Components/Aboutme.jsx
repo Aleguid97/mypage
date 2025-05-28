@@ -1,7 +1,7 @@
 import React from "react";
 import "aos/dist/aos.css";
 
-const AboutMeAndLanguages = ({ showItalian }) => {
+const AboutMeAndLanguages = ({ showItalian, showAboutMe = true, isTabletOrMobile = false }) => {
   const languages = [
     { name: "Italiano", level: 100 },
     { name: "English", level: 80 },
@@ -24,9 +24,15 @@ const AboutMeAndLanguages = ({ showItalian }) => {
     { name: "SQL", src: "https://img.icons8.com/color/48/sql.png" },
   ];
 
+  // Determina se mostrare il contenuto
+  const shouldShow = !isTabletOrMobile || showAboutMe;
+
   return (
     <div className="container-fluid main mt-5 mb-5">
-      <div className="aboutme" data-aos="fade-up">
+      <div 
+        className={`aboutme ${shouldShow ? 'd-block' : 'd-none'}`} 
+        data-aos="fade-up"
+      >
         <h5 className={`fs-1 ${showItalian ? "d-none" : "d-block"} aben`}>About Me</h5>
         <h5 className={`fs-1 ${showItalian ? "d-block" : "d-none"} abit`}>Su di me</h5>
 
@@ -76,7 +82,8 @@ const AboutMeAndLanguages = ({ showItalian }) => {
           ))}
         </div>
       </div>
-      <div className="technologies-container m-0">
+      
+      <div className={`technologies-container m-0 ${shouldShow ? 'd-block' : 'd-none'}`}>
         <h4 className={`fs-2 pt-3 tecEn ${showItalian ? "d-none" : "d-block"}`}>Technologies</h4>
         <h4 className={`fs-2 pt-3 tecIta ${showItalian ? "d-block" : "d-none"}`}>Tecnologie</h4>
         {technologies.map((tech) => (
@@ -85,7 +92,7 @@ const AboutMeAndLanguages = ({ showItalian }) => {
             className="technology-icon"
             src={tech.src}
             alt={`${tech.name} icon`}
-            style={{ width: "50px", height: "50px" }}
+            style={{ width: "50px", height: "50px" , margin: "12px" }}
           />
         ))}
       </div>
