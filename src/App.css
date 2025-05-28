@@ -239,9 +239,7 @@ ul {
   .aboutme {
     display: none;
   }
-
   
-
 
   /* Usa Grid Layout per centrare le icone */
   .technologies-grid {
@@ -382,6 +380,7 @@ ul {
 @media only screen and (max-width: 600px) {
   .technologies-container {
     flex-direction: row;
+    
   }
 
   .technologies-grid {
@@ -393,6 +392,9 @@ ul {
 
 /* Aggiungi una media query per schermi piccoli */
 @media only screen and (max-width: 600px) {
+
+  
+
   
 }
 

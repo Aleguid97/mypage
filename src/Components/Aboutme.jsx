@@ -83,7 +83,7 @@ const AboutMeAndLanguages = ({ showItalian, showAboutMe = true, isTabletOrMobile
         </div>
       </div>
       
-      <div className={`technologies-container m-0 ${shouldShow ? 'd-block' : 'd-none'}`}>
+      <div className={`technologies-container ms-3 ${shouldShow ? 'd-block' : 'd-none'}`}>
         <h4 className={`fs-2 pt-3 tecEn ${showItalian ? "d-none" : "d-block"}`}>Technologies</h4>
         <h4 className={`fs-2 pt-3 tecIta ${showItalian ? "d-block" : "d-none"}`}>Tecnologie</h4>
         {technologies.map((tech) => (
@@ -92,7 +92,7 @@ const AboutMeAndLanguages = ({ showItalian, showAboutMe = true, isTabletOrMobile
             className="technology-icon"
             src={tech.src}
             alt={`${tech.name} icon`}
-            style={{ width: "50px", height: "50px" , margin: "12px" }}
+            style={{ width: "50px", height: "50px", margin: "10px" }}
           />
         ))}
       </div>
