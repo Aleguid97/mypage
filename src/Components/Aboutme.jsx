@@ -83,18 +83,20 @@ const AboutMeAndLanguages = ({ showItalian, showAboutMe = true, isTabletOrMobile
         </div>
       </div>
       
-      <div className={`technologies-container ${shouldShow ? 'd-block' : 'd-none'}`}>
-        <h4 className={`fs-2 pt-3 tecEn ${showItalian ? "d-none" : "d-block"}`}>Technologies</h4>
-        <h4 className={`fs-2 pt-3 tecIta ${showItalian ? "d-block" : "d-none"}`}>Tecnologie</h4>
-        {technologies.map((tech) => (
-          <img
-            key={tech.name}
-            className="technology-icon"
-            src={tech.src}
-            alt={`${tech.name} icon`}
-            style={{ width: "50px", height: "50px", marginInlineStart: "10px" }}
-          />
-        ))}
+      <div className={`technologies-container m-0 ${shouldShow ? 'd-block' : 'd-none'}`}>
+        <h4 className={`fs-2 pt-3 mb-3 tecEn ${showItalian ? "d-none" : "d-block"}`}>Technologies</h4>
+        <h4 className={`fs-2 pt-3 mb-3 tecIta ${showItalian ? "d-block" : "d-none"}`}>Tecnologie</h4>
+        <div className="d-flex flex-wrap align-items-center">
+          {technologies.map((tech) => (
+            <img
+              key={tech.name}
+              className="technology-icon"
+              src={tech.src}
+              alt={`${tech.name} icon`}
+              style={{ width: "50px", height: "50px", margin: "10px" }}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
