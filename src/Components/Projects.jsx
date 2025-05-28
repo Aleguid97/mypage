@@ -1,42 +1,115 @@
-import React, { useEffect } from "react";
-import { Carousel } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css"; // Importa lo stile di Bootstrap
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Modal, Button } from "react-bootstrap";
+import { FaArrowLeft } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
+const projects = [
+  {
+    title: "Fruitfy Market",
+    video: "/Presentazione_FruitfyMarket.mp4",
+    description: "Un'app marketplace per la frutta a km 0.",
+  },
+  {
+    title: "Project 2",
+    video: "/Presentazione_DnDcompanion.mp4",
+    description: "App per creare e gestire PG di Dungeons & Dragons.",
+  },
+  {
+    title: "Project 3",
+    image: "https://via.placeholder.com/800x400",
+    description: "Terzo progetto di esempio.",
+  },
+];
 
 function Projects() {
-  useEffect(() => {
-    // Usa un timeout per garantire che lo scroll avvenga dopo che la pagina è completamente caricata
-    const timer = setTimeout(() => {
-      window.scrollTo({
-        top: document.documentElement.scrollHeight,
-        behavior: "smooth",
-      });
-    }, 100); // Un breve ritardo per garantire che il contenuto sia completamente caricato
+  const [showModal, setShowModal] = useState(false);
+  const [activeVideo, setActiveVideo] = useState(null);
+  const navigate = useNavigate();
 
-    return () => clearTimeout(timer); // Pulisci il timeout se il componente viene smontato
-  }, []);
+  const openModal = (videoSrc) => {
+    setActiveVideo(videoSrc);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setActiveVideo(null);
+  };
+
+  const handleComeBack = () => {
+    navigate("/");
+  };
 
   return (
-    <div className="container-fluid ">
-      <div className="projects">
-        <h5 className="fs-2 text-left mb-3">Projects</h5>
-        <Carousel>
-          <Carousel.Item>
-            <video className="fixed-size-video" autoPlay loop muted width={800} height={400}>
-              <source src="/Presentazione_FruitfyMarket.mp4" type="video/mp4" />
-            </video>
-            <Carousel.Caption></Carousel.Caption>
-          </Carousel.Item>
+    <div className="container my-5">
+      <div className="d-flex align-items-center mb-4">
+  <button
+    onClick={handleComeBack}
+    className="btn btn-link p-0 me-3"
+    style={{ border: "none", background: "none" }}
+    aria-label="Torna alla home"
+  >
+    <FaArrowLeft size={32} className="arrow"/>
+  </button>
+  <h2 className="mb-0">Projects</h2>
+</div>
 
-          <Carousel.Item>
-            <img className="fixed-size-video" src="https://via.placeholder.com/800x400" alt="Second slide" />
-            <Carousel.Caption></Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="fixed-size-video" src="https://via.placeholder.com/800x400" alt="Third slide" />
-            <Carousel.Caption></Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+
+      <div className="row g-4">
+        {projects.map((project, index) => (
+          <div key={index} className="col-md-4">
+            <div className="card h-100 shadow-sm">
+              {project.video ? (
+                <>
+                  <video
+                    className="card-img-top h-100"
+                    controls
+                    style={{ maxHeight: "250px", objectFit: "cover" }}
+                  >
+                    <source src={project.video} type="video/mp4" />
+                  </video>
+                  <button
+                    className="btn btn-ingrandisci m-2"
+                    onClick={() => openModal(project.video)}
+                  >
+                    Ingrandisci
+                  </button>
+                </>
+              ) : (
+                <img
+                  src={project.image}
+                  className="card-img-top "
+                  alt={project.title}
+                />
+              )}
+              <div className="card-body">
+                <h5 className="card-title">{project.title}</h5>
+                <p className="card-text">{project.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
+
+      {/* Modal per video ingrandito */}
+      <Modal show={showModal} onHide={closeModal} size="lg" centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Anteprima</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {activeVideo && (
+            <video controls autoPlay style={{ width: "100%" }}>
+              <source src={activeVideo} type="video/mp4" />
+            </video>
+          )}
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            Chiudi
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }

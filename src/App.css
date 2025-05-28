@@ -12,7 +12,8 @@ a:hover {
 }
 
 body {
-  background: linear-gradient(90deg, rgb(2, 56, 89), rgb(36, 89, 123), rgb(80, 130, 180));
+ background: linear-gradient(90deg, rgb(1, 35, 56), rgb(22, 60, 83), rgb(50, 90, 130));
+
   box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
   margin: 0;
@@ -96,6 +97,8 @@ ul {
   display: inline-block;
   border: none;
 }
+
+
 .btn-aboutme {
   background-color: #ffffff;
   color: #0f172a;
@@ -103,7 +106,25 @@ ul {
   text-decoration: none;
   display: inline-block;
   border: none;
+  transition: 0.3s;
 }
+
+.btn-aboutme:hover {
+  background-color: crimson;
+  color: #faffff;
+  outline: none;
+}
+
+
+
+/* .btn-aboutme {
+  background-color: #ffffff;
+  color: #0f172a;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+} */
 
 .projects {
   margin-top: 300px;
@@ -111,33 +132,7 @@ ul {
   display: flex;
   flex-direction: column;
 }
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  display: none;
-}
-.carousel-indicators {
-  background-color: crimson;
-  border-radius: 50px;
-}
 
-/* .carousel-item {
-
-} */
-.carousel-indicators {
-  position: absolute;
-  right: 22%;
-
-  margin-right: 10%;
-  margin-left: 10%;
-}
-.fixed-size-video {
-  /* width: 70%;
-  height: 50%; */
-  object-fit: cover;
-  border-radius: 30px;
-  flex-direction: column;
-  align-items: center;
-}
 
 .btn-projects {
   background-color: #ffffff;
@@ -147,6 +142,8 @@ ul {
   display: inline-block;
   border: none;
 }
+
+
 
 .btn-projects:hover {
   background-color: crimson;
@@ -159,10 +156,41 @@ ul {
 }
 
 
-.btn-aboutme:hover {
+/* .btn-aboutme:hover {
+  background-color: crimson;
+  color: #faffff;
+} */
+
+/* ingrandisci button */
+.btn-ingrandisci {
+  background-color:  rgb(50, 90, 130);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+}
+
+.btn-ingrandisci:hover {
   background-color: crimson;
   color: #faffff;
 }
+.btn-ingrandisci:focus {
+  background-color: crimson;
+  color: #faffff;
+}
+
+.arrow {
+    color: #fff;
+  }
+
+  .arrow:hover {
+    color: crimson;
+  }
+
+  .arrow:focus {
+    color: crimson;
+  }
 
 .main {
   p {
@@ -208,6 +236,10 @@ ul {
 }
 
 
+.Cd :hover {
+  transform: scale(1.05); /* Aggiungi un effetto di ingrandimento al passaggio del mouse */
+  transition: transform 0.3s ease}
+
 /* <------------------------MEDIA QUERY CELL E TABLET*--------------------->*/
 @media only screen and (min-width: 350px) and (max-width: 932px) {
   
@@ -222,9 +254,15 @@ ul {
     flex-wrap: wrap;
   }
 
-  .tecEn{
-    display: none;
-  }
+  /* .flagIta, .flagEng {
+    width: 30px;
+    height: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+  } */
+   
+  
+
 
   .technology-icon {
     margin: 10px;
@@ -270,17 +308,6 @@ ul {
   span {
     margin-inline-start: 20px;
   }
-}
-
-.carousel-indicators {
-  background-color: crimson;
-  border-radius: 50px;
-}
-
-.carousel-indicators {
-  position: absolute;
-  right: 13%;
-  display: none;
 }
 
 .buttons {
@@ -341,6 +368,8 @@ ul {
   border: none;
 }
 
+
+
 .btn-aboutme:hover {
   background-color: crimson;
   color: #faffff;
@@ -350,6 +379,27 @@ ul {
   background-color: crimson;
   color: #faffff;
 }
+
+.btn-projects {
+  background-color: #ffffff;
+  color: #0f172a;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+}
+
+.btn-projects:hover {
+  background-color: crimson;
+  color: #faffff;
+}
+
+.btn-projects:focus {
+  background-color: crimson;
+  color: #faffff;
+}
+
+
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -378,35 +428,10 @@ ul {
 }
 
 
-.play-btn {
-  font-size: xx-large;
-  position: fixed;
-  bottom: 0;
-  right: 0; /* Cambia left in right */
-  z-index: 1000;
-  padding: 10px 20px;
-  border: none;
-}
-
 
 /* Aggiungi una media query per schermi piccoli */
 @media only screen and (max-width: 600px) {
-  .fixed-size-video {
-    width: 100%;
-    height: auto;
-  }
-
-  .carousel-indicators {
-    bottom: 10px; /* Posiziona gli indicatori in basso per migliorare la visibilità */
-    left: 40%;
-    transform: translateX(-50%);
-    width: 70%; /* Riduci la larghezza degli indicatori */
-  }
-
-  .carousel-indicators li {
-    width: 10px; /* Riduci le dimensioni degli indicatori */
-    height: 10px;
-  }
+  
 }
 
 /* Media query per schermi medi */
@@ -416,16 +441,5 @@ ul {
     height: auto;
   } */
 
-  .carousel-indicators {
-    bottom: 15px; /* Posiziona gli indicatori in basso */
-    left: 20%;
-    bottom: 10%;
-    transform: translateX(-50%);
-    width: 80%; /* Adatta la larghezza */
-  }
-
-  .carousel-indicators li {
-    width: 12px;
-    height: 12px;
-  }
+  
 }

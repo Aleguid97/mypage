@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import AOS from "aos";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "aos/dist/aos.css";
 
 function Cards() {
@@ -11,16 +11,16 @@ function Cards() {
     AOS.init({
       duration: 2000,
     });
-  }, []); 
+  }, []);
+
   const handleProjectsClick = () => {
     navigate("/projects");
-    // const tech = document.querySelector(".technologies-container");
-    // tech.style.visibility = "hidden";
   };
+
+  
 
   return (
     <div className="wrapper">
-     
       <div className="container text-center">
         <img
           src="ProPic.jpg"
@@ -59,6 +59,7 @@ function Cards() {
             <FaWhatsapp size={40} className="ms-3" />
           </a>
         </span>
+
         <div className="text-center buttons mt-5">
           <a href="\Docs\Curriculum.pdf" download="Alessio_Guida_CV.pdf">
             <button className="btn-download rounded-pill btn w-100">Download CV</button>
