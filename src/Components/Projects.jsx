@@ -63,7 +63,7 @@ function Projects() {
               {project.video ? (
                 <>
                   <video
-                    className="cell card-img-top h-100"
+                    className="card-img-top h-100"
                     controls
                     style={{ maxHeight: "250px", objectFit: "cover" }}
                   >
