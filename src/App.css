@@ -224,24 +224,22 @@ ul {
   height: 50px;
 }
 
-.carousel-item img {
-  object-fit: cover; /* Assicurati che le immagini non siano distorte */
-}
-
 
 .Cd :hover {
   transform: scale(1.05); /* Aggiungi un effetto di ingrandimento al passaggio del mouse */
   transition: transform 0.3s ease}
 
+
+
 /* <------------------------MEDIA QUERY CELL E TABLET*--------------------->*/
-@media only screen and (min-width: 350px) and (max-width: 932px) {
+@media only screen and (min-width: 350px) and (max-width: 932px) 
+
+{
   
   .aboutme {
     display: none;
   }
   
-
-  /* Usa Grid Layout per centrare le icone */
   .technologies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -283,6 +281,8 @@ ul {
   }
 }
 
+
+
 .buttons {
   display: flex;
   /* flex-direction: column; */
@@ -322,6 +322,7 @@ ul {
   border: none;
 }
 
+
 .btn-download:hover {
   background-color: crimson;
   color: #faffff;
@@ -336,7 +337,6 @@ ul {
   display: inline-block;
   border: none;
 }
-
 
 
 .btn-aboutme:hover {
@@ -357,8 +357,6 @@ ul {
   background-color: crimson;
   color: #faffff;
 }
-
-
 
 
 ::-webkit-scrollbar {
@@ -389,21 +387,3 @@ ul {
 }
 
 
-
-/* Aggiungi una media query per schermi piccoli */
-@media only screen and (max-width: 600px) {
-
-  
-
-  
-}
-
-/* Media query per schermi medi */
-@media only screen and (min-width: 601px) and (max-width: 932px) {
-  /* .fixed-size-video {
-    width: 90%; 
-    height: auto;
-  } */
-
-  
-}

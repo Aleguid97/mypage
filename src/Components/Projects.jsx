@@ -59,11 +59,11 @@ function Projects() {
       <div className="row g-4">
         {projects.map((project, index) => (
           <div key={index} className="col-md-4">
-            <div className="card h-100 shadow-sm">
+            <div className="cell card h-100 shadow-sm">
               {project.video ? (
                 <>
                   <video
-                    className="card-img-top h-100"
+                    className="cell card-img-top h-100"
                     controls
                     style={{ maxHeight: "250px", objectFit: "cover" }}
                   >
