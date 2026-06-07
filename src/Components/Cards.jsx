@@ -8,9 +8,13 @@ function Cards() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
+    try {
+      AOS.init({
+        duration: 2000,
+      });
+    } catch (error) {
+      console.error("Failed to initialize AOS animations:", error);
+    }
   }, []);
 
   const handleProjectsClick = () => {
@@ -28,6 +32,11 @@ function Cards() {
           className="rounded-circle profile-img shadow"
           width={200}
           height={200}
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.alt = "Profile photo unavailable";
+            e.target.style.background = "#e0e0e0";
+          }}
         />
         <h1 className="m-0">Alessio Guida</h1>
         <p className="lead mb-4">Junior Fullstack Developer</p>

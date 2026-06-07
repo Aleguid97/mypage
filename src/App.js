@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Home from "./Components/Home.jsx";
 import Projects from "./Components/Projects.jsx";
+import ErrorBoundary from "./Components/ErrorBoundary.jsx";
 
 import "./App.css";
 
@@ -11,14 +12,16 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <div className="App container-fluid">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-      </div>
-    </Router>
+    <ErrorBoundary>
+      <Router>
+        <div className="App container-fluid">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </div>
+      </Router>
+    </ErrorBoundary>
   );
 }
 

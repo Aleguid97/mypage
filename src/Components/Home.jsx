@@ -27,6 +27,10 @@ function Home() {
             className={`flagIta ${showItalian ? "d-none" : "d-block"} mt-1`}
             width={50}
             height={30}
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.alt = "IT";
+            }}
           />
           {/* Mostra bandiera inglese se il testo è in italiano */}
           <img
@@ -35,6 +39,10 @@ function Home() {
             className={`flagEn ${showItalian ? "d-block" : "d-none"} mt-1`}
             width={50}
             height={30}
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.alt = "EN";
+            }}
           />
         </button>
       </div>

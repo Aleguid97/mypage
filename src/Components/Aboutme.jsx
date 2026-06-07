@@ -94,6 +94,11 @@ const AboutMeAndLanguages = ({ showItalian, showAboutMe = true, isTabletOrMobile
               src={tech.src}
               alt={`${tech.name} icon`}
               style={{ width: "50px", height: "50px", margin: "10px" }}
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.alt = tech.name;
+                e.target.style.background = "#e0e0e0";
+              }}
             />
           ))}
         </div>
