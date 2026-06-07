@@ -2,7 +2,16 @@ import React, { useEffect } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import AOS from "aos";
 import { useNavigate } from "react-router-dom";
+import SocialLink from "./SocialLink";
 import "aos/dist/aos.css";
+
+const socialLinks = [
+  { href: "https://github.com/aleguid97", icon: FaGithub },
+  { href: "https://www.linkedin.com/in/aleguid97dev/", icon: FaLinkedin, className: "mx-3" },
+  { href: "mailto:aleguid97dev@gmail.com", icon: FaEnvelope, className: "me-3", external: false },
+  { href: "https://t.me/Kshatriya1488", icon: FaTelegram },
+  { href: "https://wa.me/+393882547822", icon: FaWhatsapp, className: "ms-3" },
+];
 
 function Cards() {
   const navigate = useNavigate();
@@ -16,8 +25,6 @@ function Cards() {
   const handleProjectsClick = () => {
     navigate("/projects");
   };
-
-  
 
   return (
     <div className="wrapper">
@@ -43,28 +50,22 @@ function Cards() {
         </figure>
 
         <span className="container social">
-          <a href="https://github.com/aleguid97" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={40} />
-          </a>
-          <a href="https://www.linkedin.com/in/aleguid97dev/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={40} className="mx-3" />
-          </a>
-          <a href="mailto:aleguid97dev@gmail.com">
-            <FaEnvelope size={40} className="me-3" />
-          </a>
-          <a href="https://t.me/Kshatriya1488" target="_blank" rel="noopener noreferrer">
-            <FaTelegram size={40} />
-          </a>
-          <a href="https://wa.me/+393882547822" target="_blank" rel="noopener noreferrer">
-            <FaWhatsapp size={40} className="ms-3" />
-          </a>
+          {socialLinks.map((link) => (
+            <SocialLink
+              key={link.href}
+              href={link.href}
+              icon={link.icon}
+              className={link.className}
+              external={link.external}
+            />
+          ))}
         </span>
 
         <div className="text-center buttons mt-5">
           <a href="\Docs\Curriculum.pdf" download="Alessio_Guida_CV.pdf">
-            <button className="btn-download rounded-pill btn w-100">Download CV</button>
+            <button className="btn-download btn-common rounded-pill btn w-100">Download CV</button>
           </a>
-          <button className="btn-projects rounded-pill btn" onClick={handleProjectsClick}>
+          <button className="btn-projects btn-common rounded-pill btn" onClick={handleProjectsClick}>
             Projects
           </button>
         </div>
