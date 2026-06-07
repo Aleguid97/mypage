@@ -66,8 +66,13 @@ function Projects() {
                     className="card-img-top h-100"
                     controls
                     style={{ maxHeight: "250px", objectFit: "cover" }}
+                    onError={(e) => {
+                      console.error(`Failed to load video: ${project.video}`);
+                      e.target.style.display = "none";
+                    }}
                   >
                     <source src={project.video} type="video/mp4" />
+                    Your browser does not support the video tag.
                   </video>
                   <button
                     className="btn btn-ingrandisci m-2"
@@ -81,6 +86,11 @@ function Projects() {
                   src={project.image}
                   className="card-img-top "
                   alt={project.title}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.alt = `${project.title} — image unavailable`;
+                    e.target.style.background = "#e0e0e0";
+                  }}
                 />
               )}
               <div className="card-body">
